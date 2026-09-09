@@ -1,0 +1,24 @@
+heap é a região da memória utilizada para alocação dinâmica de dados durante a execução do programa
+
+
+malloc - memory allocation
+
+tem que usar:
+#include <stdlib.h>
+<tipo dado> *<ponteiro> = malloc(sizeof(<tipodado>)) // retorna no ponteiro o endereço de memoria inicial
+
+
+
+
+calloc - aloca de forma definida um tamanho especifico, inicializando todos do tamanho com 0
+
+<tipo dado> *<ponteiro> = calloc(<quantia do tipo de dado>, sizeof(<tipo dado>))
+
+realloc - altera valor/ redimensiona valor já alocado
+
+<tipo dado> *<pointer> = realloc(<memoriaAlocada>, <novoValor> * sizeof(<tipo dado>))
+
+
+Melhor cenário:
+free(pointer);
+pointer = NULL;
