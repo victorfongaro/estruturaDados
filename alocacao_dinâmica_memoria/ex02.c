@@ -7,5 +7,11 @@ int main(){
     for (int i = 0; i < 5; i++){
         scanf("%d", &ponteiroInt[i]);
     }
-    
+
+    for (int i = 0; i <5 ; i++){
+        printf("%d ", ponteiroInt[i]);
+    }
+    printf("\n");
+    free(ponteiroInt);
+    ponteiroInt = NULL;
 }
